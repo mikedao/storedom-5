@@ -5,8 +5,10 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+ruby '2.7.4'
 
-gem 'rails', '~> 5.1.2'
+
+gem 'rails', '~> 5'
 gem 'sqlite3'
 gem 'puma', '~> 3.7'
 gem 'uglifier', '>= 1.3.0'
@@ -14,7 +16,6 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'faker'
-gem 'therubyracer'
 gem 'bootstrap-sass'
 
 group :development, :test do
